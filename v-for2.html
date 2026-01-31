@@ -41,6 +41,8 @@
         }
       },
       mounted() {
+    console.log('★★ mounted 実行された ★★');
+        
         const backendEndpoint = 'http://153.120.121.157:30165/notes_from_b';
         axios.get(backendEndpoint)
           .then(response => {
